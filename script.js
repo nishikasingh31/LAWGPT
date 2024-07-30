@@ -5,8 +5,7 @@ const gptCommands =
   "Answer the question to the point(100 words), make chat more legal if question required ipc section then give ipc section of it."
 
 //GPT COMMANDS ABOVE
-
-const API_KEY = "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";
+require('dotenv').config()
 const searchResults = document.querySelector(".search_results");
 searchResults.addEventListener("click", sendMessage);
 let gptResult;
